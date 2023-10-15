@@ -1,7 +1,7 @@
 import sys
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list[int]) -> int:
         m = sys.maxsize
         ans = 0
         
@@ -17,6 +17,11 @@ class Solution:
             ans = max(ans, profit)
 
         return ans
+    
+
+if __name__ == '__main__':
+    s = Solution()
+    s.maxProfit([7,6,4,3,1])
 
 
 # You are given an array prices where prices[i] is the price of a given stock on the ith day.
